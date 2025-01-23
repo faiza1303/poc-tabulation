@@ -1,0 +1,82 @@
+.test-simulation-tab
+{
+    position: fixed;
+    right: .625rem;
+    top: 60%;
+    text-align: center;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f4799;
+    border-radius: 5px;
+}
+
+.test-simulation-tab-btn:hover {
+  background-color: #9fbfff !important;
+  color: unset !important; 
+  text-decoration: none !important;
+}
+
+.test-test-simulation-tab a {
+  padding: 10px !important;
+}
+
+
+.test-tab-simulation-selected-dom {
+  text-decoration: underline;
+  color: brown !important;
+  animation: tab-simulation-selected-dom-animation 2s infinite;
+}
+
+.test-tab-simulation-indexlink {
+  position: absolute;
+  height: 7em;
+}
+
+.test-simulation-tab-btn {
+    width: 1rem !important;
+    height: 1rem !important;
+    padding: 8px;
+}
+
+.test-sumulation-no-focus {
+    border: 2.3px dashed yellow;
+}
+
+.test-tab-simulation-indexlink-number
+{
+    position: absolute;
+}
+
+#simulation_tab_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+
+/** flèche de liaison **/
+.animated-arrow {
+  stroke: black;
+  stroke-width: 2;
+  animation: colorChange 2s forwards;
+}
+
+/** texte au dessus du **/
+.animated-arrow-text {
+  stroke: black;
+  stroke-width: 0.8;
+  animation: color-change 2s forwards;
+}
+
+
+@keyframes color-change {
+  0% { stroke: rgb(248, 243, 237); }
+  30% { stroke: rgb(163, 149, 133); }
+  60% { stroke: rgb(83, 71, 56); }
+  /*25% { stroke: rgb(105, 93, 67); }
+  50% { stroke: rgb(143, 117, 60); }
+  75% { stroke: rgb(194, 165, 39); }*/
+  60% { stroke: rgb(250, 150, 50); }
+}
